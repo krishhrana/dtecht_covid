@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>DTechT</title>
+<style>
+    @font-face {
+        font-family: std;
+        src: url("/static/Circular_Std_Bold.ttf");
+ 		
+  			}			
+    *{
+        margin: 0;
+        font-family: std ;
+    }
+    
+ 
+    .logo{
+			position: absolute;
+			left: 10%;
+			top: 7%;
+
+		}
+		.menu{
+			position: absolute;
+			text-decoration: none;
+			top: 7%;
+			left:  77%;
+			position: absolute;
+			width: 158px;
+			height: 50px;
+			background: #1200f1;
+			border: 5px solid #1200f1;
+			box-sizing: border-box;
+            text-align: center;
+		}
+		.m1{
+			
+            width: 158px;
+			height: 39px;	
+			
+			font-style: normal;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 164%;
+			text-align: center;
+			
+
+			color: #FFFFFF;
+		}
+        .container{
+            position: absolute;
+       left : 10%;
+       top: 15%;
+       width: 65%;
+       }
+    
+    input{
+        margin-right: 5%;
+        margin-top: 4%;
+        height: 30px;
+        margin-left: 3%;
+        background: #E7E5FE;
+        opacity: 1;
+        border: 0;
+        margin-top: 3.25%;
+    }
+    label{
+        
+        font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 164%;
+/* or 33px */
+
+align-items: center;
+    }
+    select{
+        margin-right: 5%;
+        height: 30px;
+        margin-left: 3%;
+        background: #E7E5FE;
+        opacity: 1;
+        border: 0;
+        width: 159px;
+    }
+    span{
+        margin-left: -5% ;
+        
+        font-style: normal;
+        width: 218px;
+        height: 30px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 164%;
+        color: #534444;
+    }
+    option{
+        
+font-style: normal;
+font-weight: 450;
+font-size: 20px;
+line-height: 164%;
+/* or 33px */
+
+
+align-items: center;
+
+color: rgba(0, 0, 0, 0.47);
+
+    }
+    .opt{
+        
+font-style: normal;
+font-weight: 450;
+font-size: 20px;
+line-height: 164%;
+/* or 33px */
+
+
+align-items: center;
+
+color: rgba(0, 0, 0, 0.47);
+    }
+   
+   
+    .submit{
+        position: absolute;
+width: 225px;
+height: 57px;
+left: 100%;
+background: #1200f1;
+border: 5px solid #1200f1;
+box-sizing: border-box;
+
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 164%;
+/* or 39px */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+    }
+   
+   .right{
+       margin-right : 32%;
+   }
+   .right2{
+       margin-right : 32%;
+   }
+   .right3{
+       margin-right : 20%;
+   }
+/* Style page content */
+input[type="file"]{
+    display: none;
+}
+.image-text{
+    background-color: #E7E5FE;
+        position: absolute;
+        border: 0;
+        width: 60%;
+height: 121px;
+        margin: auto;
+        
+font-style: normal;
+font-weight: 450;
+font-size: 16px;
+line-height: 164%;
+
+/* identical to box height, or 30px */
+align-items: center;
+
+color: #000000;
+}
+.material-icons{
+    float: right;
+    position: relative;
+    
+    left: 30%;
+}
+.img3{
+    position: absolute;
+left: 89.2%;
+
+top: 20%;
+
+}
+.virus{
+    position: absolute;
+    bottom: 0%;
+    top: 100%;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 450px) {
+    .logo{
+	position: absolute;
+	top:2%;
+	left: 15%;
+}
+.menu{
+display: none;
+}
+    .container{
+    margin-top: 0%;
+    margin-left:10%;
+    width: 40%;
+  }
+  label{
+      font-size: 16px;  
+      width: 130%
+
+  }
+  input{
+      height: 22px;
+      width: 130%
+  }
+  .submit{
+      font-size: 15px;
+      width: 180px;
+      position: relative;
+      left: 22%;
+      margin-top: 100%;
+      
+  }
+  .image-text{
+      display: flex;
+      font-size: 10px;
+      width: 140%;
+  }
+  .img3{
+      width: 15%;
+      height: 15%;
+      position: relative;
+      top: 300px;
+      right: 100px;
+  }
+}
+     
+</style>
+</head>
+<body>
+<div class>
+    
+    <img src="/static/Logo.png" alt="Logo" class ="logo">
+    <a href="/" class="menu"> <span class="m1">Home</span> </a>
+    <img src="/static/img3.png" alt="img3" class="img3">
+</div>
+
+<div  class="container">
+<form class="form" action="#" method="post" enctype="multipart/form-data">
+<label> First Name: </label><input type="text" name="fname"><br>
+
+<label> Last Name: </label><input type="text" name="lname"><br>
+<label > Gender: </label> <select class="right" id="gender" name="gender">
+    <option value="" disabled selected hidden><span class="opt">Select</span></option>
+    <option value="Male">Male</option>
+    <option value="Male">Female</option>
+    <option value="Male">Others</option>
+    </select>
+<label >Age:</label> <input  type="text" name="age"><br>
+<label>Country:</label> <input class="right2" type="text" name="country">
+<label >State:</label> <input  type="text" name="state"><br>
+<label>Mobile Number:</label> <input class="right3" type="text" name="mobno">
+<label >Blood Group:</label><select  id="bldgrp" name="bldgrp" placeholder="Select">
+    <option value="" disabled selected hidden> <span class="opt">Select</span></option>
+    <option value="A+">A+</option>
+    <option value="A-">A-</option>
+    <option value="B+">B+</option>
+    <option value="B-">B_</option>
+    <option value="O+">O+</option>
+    <option value="O-">O+</option>
+    <option value="AB+">AB+</option>
+    </select><br>
+<label>Aadhar Number: </label><input type="text" name="aadhar"> <span>(Enter a 12 digit number)</span><br><br>
+
+<label style="margin-right: 5%;">Enter an Image:</label> <input type="file"  id="file" name="file">
+<label class="image-text" for="file">
+    <span class="material-icons">
+        add_photo_alternate
+        </span>
+        &nbsp; Images are allowed jpeg,pdf,tiff formats only.<br>
+        &nbsp;  Image size should not be more than 1mb.
+    </label> 
+    <br>
+<input class="submit" style="float: right;" type="submit" value="Generate Report">
+</form>
+    
+    <img src="/static/Virus.png" alt="virus" class="virus">
+</div>
+
+</body>
+</html>

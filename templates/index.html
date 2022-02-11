@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<title>DTechT</title>
+	
+	<style>
+		  @font-face {
+        font-family: std;
+        src: url("/static/Circular_Std_Bold.ttf");
+ 		
+  			}	
+		*{
+			font-family: std;
+		}
+	
+		.logo{
+			position: absolute;
+			left: 10%;
+			top: 7%;
+
+		}
+		.menu{
+			position: absolute;
+			text-decoration: none;
+			top: 7%;
+			left:  77%;
+			position: absolute;
+			width: 158px;
+			height: 50px;
+			background: #1200f1;
+			border: 5px solid #1200f1;
+			box-sizing: border-box;
+		}
+		.m1{
+			width: 158px;
+			height: 39px;	
+			
+			font-style: normal;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 164%;
+			text-align: center;
+			margin-left: 5%;
+
+			color: #FFFFFF;
+		}
+		.text{
+			position: absolute;
+			width: 600px;
+			height: 126px;
+			left: 10%;
+			top: 25%;
+
+			font-style: normal;
+			font-weight: bold;
+			font-size: 55px;
+			line-height: 115%;
+			/* or 63px */
+
+			display: flex;
+			align-items: center;
+
+		}
+		.img1{
+			position: absolute;
+
+
+left: 55%;
+top: 14.5%;
+
+transform: rotate(-10.07deg);
+		}
+		.img2{
+			
+position: absolute;
+width: 151px;
+height: 63px;
+left: 150px;
+top: 57.5%;
+		}
+.text2{
+	position: absolute;
+width: 564px;
+height: 61px;
+left: 147px;
+top: 68%;
+
+
+font-style: normal;
+font-weight: bold;
+font-size: 35px;
+line-height: 164%;
+/* identical to box height, or 61px */
+
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+@media screen and (max-width: 450px){
+.logo{
+	position: absolute;
+	top:2%;
+	left: 22%;
+}
+.menu{
+	position: absolute;
+	top: 15%;
+	left: 22%;
+}
+.text{
+	width: 70%;
+	font-size: 30px;
+	position: absolute;
+	left:15%;
+	top: 45%;
+}
+.text2{
+	width: 70%;
+	font-size: 22px;
+	position: absolute;
+	left: 15%;
+	top: 75%
+}
+.img1{
+	width: 80%;
+	position: absolute;
+	top: 20%;
+	left: 0%;
+	
+}
+.img2{
+	position: absolute;
+	left: 22%;
+	top: 65%;
+}
+
+}
+
+	</style>
+</head>
+<body>
+
+	<div class="main">
+		<img src="/static/Logo.png" alt="Logo" class ="logo">
+		<a href="./aboutus" class="menu"> <span class="m1">About Us</span> </a>
+		<p class= "text">Let's get tested within seconds.</p>
+		<img src="/static/img1.png" alt="Logo" class ="img1">
+		<a href="./login"><img src="/static/img2.png" alt="Logo" class ="img2"></a> 
+		<p class= "text2">Detection of COVID-19 using A.I.</p>
+	</div>
+</body>
+</html>
