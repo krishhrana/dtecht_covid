@@ -10,7 +10,7 @@ COPY . .
 # Install production dependencies.
 RUN pip install Flask gunicorn
 RUN pip install tensorflow==2.4.1
-RUN pip install opencv-python
+RUN pip install opencv-python==4.5.5.62
 RUN pip install numpy
 
 # Run the web service on container startup. Here we use the gunicorn
